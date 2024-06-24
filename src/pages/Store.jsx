@@ -145,7 +145,7 @@ const Store = () => {
           <Carousel
             additionalTransfrom={0}
             arrows
-            arrowsClass="w-[100vw]"
+            // arrowsClass="w-[100vw]"
             autoPlaySpeed={3000}
             centerMode={false}
             className=""
@@ -225,7 +225,7 @@ const Store = () => {
             rtl={false}
             shouldResetAutoplay
             showDots={false}
-            sliderClass=" flex m-0 bg-transparent z-[3] overflow-hidden justify-between "
+            sliderClass=" flex m-0 bg-transparent z-[3]  justify-between "
             slidesToSlide={1}
             swipeable
           >
