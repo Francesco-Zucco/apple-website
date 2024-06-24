@@ -141,7 +141,7 @@ const Store = () => {
             </div>
           </div>
         )}
-        <div className=" w-full flex content-start justify-center pr-10 ">
+        <div className=" w-full flex content-start justify-center ">
           <Carousel
             additionalTransfrom={0}
             arrows
