@@ -221,6 +221,15 @@ const initialState = [
       },
     ],
   },
+  {
+    footerLinks: [
+      "Privacy Policy",
+      "Terms of Use",
+      "Sales Policy",
+      "Legal",
+      "Site Map",
+    ],
+  },
 ];
 
 const dataBase = createSlice({
