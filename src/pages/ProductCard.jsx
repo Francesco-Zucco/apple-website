@@ -14,7 +14,7 @@ const ProductCard = (prop) => {
     );
   };
   return (
-    <div className="max-h-[500px] max-w-[370px] shadow-lg rounded-3xl  bg-white m-4 ">
+    <div className="max-h-[500px] select-none max-w-[370px]  shadow-lg rounded-3xl  bg-white m-4 ">
       <div className=" p-6 flex flex-col gap-[77px] ">
         <h2 className="text-[25px] tracking-tighter text-nowrap">
           <b>{prop.name}</b>

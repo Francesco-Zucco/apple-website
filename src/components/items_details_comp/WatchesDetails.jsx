@@ -1,13 +1,13 @@
 import { useParams } from "react-router-dom";
-import { useFetchWatches } from "../useFetchProducts";
+import { useSelector } from "react-redux";
 
 const WatchesDetails = () => {
-  const { watchesData } = useFetchWatches();
+  const dataBase = useSelector((store) => store.dataBase);
   const { param } = useParams();
 
   const findMyProd = () => {
     // console.log("A");
-    const result = watchesData.find((p) => p.param === param);
+    const result = dataBase[3].watches.find((p) => p.param === param);
     return (
       <div className="w-full grid">
         <h2>{result.productName}</h2>
@@ -17,7 +17,7 @@ const WatchesDetails = () => {
     );
   };
 
-  return <div className="bg-white"> {watchesData && findMyProd()}</div>;
+  return <div className="bg-white"> {dataBase[3].watches && findMyProd()}</div>;
 };
 
 export default WatchesDetails;

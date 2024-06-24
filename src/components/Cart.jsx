@@ -6,10 +6,26 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const Cart = () => {
+  // const [collapse, setCollapse] = useState(false);
+
   const carts = useSelector((store) => store.cart.items);
   const [totalPrice, setTotalPrice] = useState();
   //   const { products } = useFetchProducts();
   const dispatch = useDispatch();
+
+  // useEffect(() => {
+  //   handleResize();
+  //   window.addEventListener("resize", handleResize);
+  // }, []);
+
+  // const handleResize = () => {
+  //   if (window.innerWidth > 834) {
+  //     setCollapse(false);
+  //     setShowNavBar(false);
+  //   } else {
+  //     setCollapse(true);
+  //   }
+  // };
 
   useEffect(() => {
     let total = 0;
@@ -46,8 +62,8 @@ const Cart = () => {
   return (
     <div className="flex flex-col items-center bg-white w-full">
       {totalPrice ? (
-        <div className="flex flex-col w-[1024px] justify-center gap-5 h-[300px] items-center border-b-[1px] border-b-[#d2d2d7]">
-          <h1 className="text-[35px] text-center leading-[40px]">
+        <div className="flex flex-col w-full justify-center gap-5 h-[300px] items-center border-b-[1px] border-b-[#d2d2d7]">
+          <h1 className="text-[30px] text-center leading-[40px] ">
             <b>Your bag total is ${totalPrice}.00.</b>
           </h1>
           <h1 className="text-[17px] ">Free delivery and free returns.</h1>

@@ -1,13 +1,13 @@
 import { useParams } from "react-router-dom";
-import { useFetchIpads } from "../useFetchProducts";
+import { useSelector } from "react-redux";
 
 const IpadsDetail = () => {
-  const { ipadsData } = useFetchIpads();
+  const dataBase = useSelector((store) => store.dataBase);
   const { param } = useParams();
 
   const findMyProd = () => {
     // console.log("A");
-    const result = ipadsData.find((p) => p.param === param);
+    const result = dataBase[1].ipads.find((p) => p.param === param);
     return (
       <div className="w-full grid">
         <h2>{result.productName}</h2>
@@ -17,7 +17,7 @@ const IpadsDetail = () => {
     );
   };
 
-  return <div className="bg-white"> {ipadsData && findMyProd()}</div>;
+  return <div className="bg-white"> {dataBase[1].ipads && findMyProd()}</div>;
 };
 
 export default IpadsDetail;

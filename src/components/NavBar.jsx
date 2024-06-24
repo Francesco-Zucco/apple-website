@@ -70,7 +70,7 @@ const NavBar = () => {
           <Link to={"/"} className="flex items-center ps-[8px] pe-[8px]">
             <svg
               fill="#cecece"
-              className="hover:fill-[#F9F9F9] "
+              className="hover:fill-[#F9F9F9]"
               height="44"
               viewBox="0 0 14 44"
               width="14"
