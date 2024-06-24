@@ -62,14 +62,13 @@ const Cart = () => {
   return (
     <div className="flex flex-col items-center bg-white w-full">
       {totalPrice ? (
-        <div className="flex flex-col w-full justify-center gap-5 h-[300px] items-center border-b-[1px] border-b-[#d2d2d7]">
-          <h1 className="text-[30px] text-center leading-[40px] ">
-            <b>Your bag total is ${totalPrice}.00.</b>
-          </h1>
-          <h1 className="text-[17px] ">Free delivery and free returns.</h1>
-          <button className="text-[13px] text-[#fafafc] border-[#0071e3] hover:bg-[#0077ED] flex justify-center items-center bg-[#0071e3] border w-[290px] h-[36px] mt-6 rounded-[7px]">
-            Check Out
-          </button>
+        <div className="w-">
+          <div className="flex flex-col w-full justify-center gap-5 h-[200px] items-center ">
+            <h1 className="text-[40px] text-center leading-[30px] ">
+              <b>Review your bag.</b>
+            </h1>
+            <h1 className="text-[17px] ">Free delivery and free returns.</h1>
+          </div>
         </div>
       ) : (
         <div className="flex flex-col w-full justify-center gap-5 h-[300px] items-center border-b-[1px] border-b-[#d2d2d7]">
@@ -104,21 +103,21 @@ const Cart = () => {
             >
               <div className="w-[1024px]">
                 <div className="flex flex-col w-full h-auto  ">
-                  <div className="border-b-[1px] pt-2 pb-5 flex items-center justify-between border-gray-300 w-full pl- pr-5">
+                  <div className="border-b-[1px] pt-3 pb-5 pl-5 flex items-center justify-between border-gray-300 w-full pl- pr-5">
                     <div className="flex w-auto h-auto">
                       <Link to={"/store/" + item.prod.param}>
                         <img
-                          className="h-auto w-[150px] object-cover"
+                          className="h-auto w-[200px] object-cover"
                           src={item.prod.productImage}
                           alt=""
                         />
                       </Link>
                     </div>
-                    <div className="flex justify-between w-full pl-4 pb-[35px]">
+                    <div className="flex justify-between w-full pl-2 pb-[45px]">
                       <div>
-                        <h2 className=" lg:text-[24px] md:text-[21px] sm:text-[18px] ">
+                        <h2 className=" lg:text-[24px] md:text-[21px] sm:text-[19px] ">
                           <b>{item.prod.productName}</b>
-                          <p className="lg:text-[17px] md:text-[15px] sm:text-[14px]">
+                          <p className="">
                             Quantity: <b>{item.quantity}</b>
                           </p>
                           {/* <p>${item.prod.description}</p> */}
