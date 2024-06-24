@@ -190,7 +190,7 @@ const Cart = () => {
                     Get 3% Daily Cash with Apple Card
                   </p>
                 </div>
-                <button className="text-[17px] text-[#fafafc] border-[#0071e3] hover:bg-[#0077ED] flex justify-center items-center bg-[#0071e3] border w-[330px] h-[56px] mt-6 rounded-[13px]">
+                <button className="text-[17px] text-[#fafafc] border-[#0071e3] hover:bg-[#0077ED] flex justify-center items-center bg-[#0071e3] border w-[280px] h-[56px] mt-6 rounded-[13px]">
                   Check Out
                 </button>
               </div>
