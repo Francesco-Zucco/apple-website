@@ -123,7 +123,7 @@ const Cart = () => {
                             </p> */}
                             <button
                               onClick={() => decrementQuantity(item.prod)}
-                              className="rounded-[900px] h-[19px] w-[19px] border-[2px] active:bg-[#8e8e8e] bg-[#b3b2b2] border-[#737374] flex justify-center items-center text-[#59595a]"
+                              className="rounded-[900px] h-[19px] w-[19px] border-[2px] active:bg-[#b3b2b2] bg-[#e8e8e8] border-[#737374] flex justify-center items-center text-[#59595a]"
                             >
                               <p className="pb-[2px]">-</p>
                             </button>
@@ -133,7 +133,7 @@ const Cart = () => {
                             </p>
                             <button
                               onClick={() => incrementQuantity(item.prod)}
-                              className="rounded-[900px] h-[19px] w-[19px] border-[2px] active:bg-[#8e8e8e] bg-[#b3b2b2] border-[#737374] flex justify-center items-center text-[#59595a]"
+                              className="rounded-[900px] h-[19px] w-[19px] border-[2px] active:bg-[#b3b2b2] bg-[#e8e8e8] border-[#737374] flex justify-center items-center text-[#59595a]"
                             >
                               <p className="pt-[1px] text-[15px]">+</p>
                             </button>

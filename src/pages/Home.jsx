@@ -209,13 +209,36 @@ const Home = () => {
         {responsivePhoto ? (
           <div className="grid grid-cols-1  gap-3 pt-3">
             <div className="relative flex justify-center h-[500px]">
-              <p className="absolute z-10 text-white text-center bottom-0 pb-[76px]">
-                Apple Worldwide Developers Conference. <br /> Join us online
-                June 10–14.
-              </p>
-              <button className="z-10 absolute text-[17px] bottom-0 mb-6 text-[#fafafc] border-[#0071e3] hover:bg-[#0077ED] bg-[#0071e3] border pr-[16px] pl-[16px] pt-[3px] pb-[3px] h-9 rounded-[980px]">
-                Learn more
-              </button>
+              <div className="absolute z-10  flex flex-col items-center pt-10">
+                <div className="flex items-center text-[32px] h-12 font-medium">
+                  <svg
+                    fill="#ffffff"
+                    className="pb-1"
+                    height="88"
+                    viewBox="0 0 14 44"
+                    width="28"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path>
+                  </svg>
+                  <h3 className="pb-1 text-white">Watch</h3>
+                </div>
+                <p className="text-[#FF0000] text-[15px] tracking-widest font-semibold">
+                  SERIES 9
+                </p>
+                <p className="text-center text-[19px] leading-6 text-white">
+                  Smarter. Brighter. Mightier.
+                </p>
+                <div className="pt-[18px] flex gap-3">
+                  <button className="text-[17px] bottom-0 mb-6 text-[#fafafc] border-[#0071e3] hover:bg-[#0077ED] bg-[#0071e3] border pr-[16px] pl-[16px] pt-[3px] pb-[3px] h-9 rounded-[980px]">
+                    Learn more
+                  </button>
+
+                  <button className="text-[17px] text-[#0071e3] border border-[#0071e3] hover:bg-[#0071e3] hover:text-[#fafafc] pr-[16px] pl-[16px] pt-[3px] pb-[3px] h-9 rounded-[980px]">
+                    Buy
+                  </button>
+                </div>
+              </div>
               <img
                 className="z-0 object-cover"
                 src="images\home_images\promo_apple_watch_series_9_order__b3u85rm9zf6u_large.jpg"
@@ -226,7 +249,7 @@ const Home = () => {
               <h3 className="absolute z-10 text-white text-center bottom-0 pb-[100px] text-[32px] font-semibold">
                 College Students
               </h3>
-              <p className="absolute z-10 text-white text-center bottom-0 pb-[76px]">
+              <p className="absolute z-10 text-white text-[19px] text-center bottom-0 pb-[76px]">
                 Mac and iPad. Go further.
               </p>
               <button className="z-10 absolute text-[17px] bottom-0 mb-6 text-[#fafafc] border-[#0071e3] hover:bg-[#0077ED] bg-[#0071e3] border pr-[16px] pl-[16px] pt-[3px] pb-[3px] h-9 rounded-[980px]">
@@ -238,9 +261,8 @@ const Home = () => {
                 alt=""
               />
             </div>
-            <div className="relative flex justify-center w-auto h-[500px]">
-              <div className="absolute z-10 flex items-center text-center bottom-0 pb-[100px] text-[32px] font-semibold ">
-                {" "}
+            <div className="relative flex justify-center h-[500px]">
+              <h3 className="absolute z-10 flex items-center text-center bottom-0 pb-[90px] text-[32px] font-semibold ">
                 <svg
                   fill="#000000"
                   height="88"
@@ -250,10 +272,10 @@ const Home = () => {
                 >
                   <path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path>
                 </svg>
-                <h3> Vision Pro</h3>
-              </div>
-              <p className="absolute z-10  text-center bottom-0 pb-[76px]">
-                Mac and iPad. Go further.
+                Vision Pro
+              </h3>
+              <p className="absolute z-10 text-[19px] text-semibold text-center bottom-0 pb-[76px]">
+                The era of spatial computing is here.
               </p>
               <button className="z-10 absolute text-[17px] bottom-0 mb-6 text-[#fafafc] border-[#0071e3] hover:bg-[#0077ED] bg-[#0071e3] border pr-[16px] pl-[16px] pt-[3px] pb-[3px] h-9 rounded-[980px]">
                 Learn more
@@ -265,6 +287,30 @@ const Home = () => {
               />
             </div>
             <div className="relative flex justify-center h-[500px]">
+              <div className="absolute z-10  flex flex-col items-center pt-10">
+                <div className="flex items-center text-[32px] h-12 font-medium">
+                  <svg
+                    fill="#000000"
+                    className="pb-1"
+                    height="88"
+                    viewBox="0 0 14 44"
+                    width="28"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path>
+                  </svg>
+                  <h3 className="pb-1 ">Trade In</h3>
+                </div>
+                <p className="text-center text-[19px] leading-6">
+                  Get $170-$630 in credit when you <br /> trade in iPhone 11 or
+                  higher.
+                </p>
+                <div className="pt-[18px] flex gap-3">
+                  <button className="text-[17px] bottom-0 mb-6 text-[#fafafc] border-[#0071e3] hover:bg-[#0077ED] bg-[#0071e3] border pr-[16px] pl-[16px] pt-[3px] pb-[3px] h-9 rounded-[980px]">
+                    Get your estimate
+                  </button>
+                </div>
+              </div>
               <img
                 className="object-cover"
                 src="images\home_images\promo_iphone_tradein__bugw15ka691e_large.jpg"
@@ -272,13 +318,56 @@ const Home = () => {
               />
             </div>
             <div className="relative flex justify-center h-[500px]">
+              <div className="absolute z-10  flex flex-col items-center pt-10">
+                <h3 className="pb-1 text-[32px] font-semibold">MacBook Air</h3>
+
+                <p className="text-center text-[19px] leading-4">
+                  Lean. Mean. M3 machine.
+                </p>
+                <div className="pt-[18px] flex gap-3">
+                  <button className="text-[17px] bottom-0 mb-6 text-[#fafafc] border-[#0071e3] hover:bg-[#0077ED] bg-[#0071e3] border pr-[16px] pl-[16px] pt-[3px] pb-[3px] h-9 rounded-[980px]">
+                    Learn more
+                  </button>
+
+                  <button className="text-[17px] text-[#0071e3] border border-[#0071e3] hover:bg-[#0071e3] hover:text-[#fafafc] pr-[16px] pl-[16px] pt-[3px] pb-[3px] h-9 rounded-[980px]">
+                    Buy
+                  </button>
+                </div>
+              </div>
               <img
                 className="object-cover"
-                src="images\home_images\promo_wwdc24.jpg"
+                src="images\home_images\promo_macbook_air_m3_small.jpg"
                 alt=""
               />
             </div>
             <div className="relative flex justify-center h-[500px]">
+              <div className="absolute z-10  flex flex-col items-center pt-10">
+                <div className="flex items-center text-[32px] h-12 font-medium">
+                  <svg
+                    fill="#000000"
+                    className="pb-1"
+                    height="88"
+                    viewBox="0 0 14 44"
+                    width="28"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path>
+                  </svg>
+                  <h3 className="pb-1 ">Card</h3>
+                </div>
+                <p className="text-center text-[19px] leading-6">
+                  Get up to 3% Daily Cash back <br /> with every purchase.
+                </p>
+                <div className="pt-[18px] flex gap-3">
+                  <button className="text-[17px] bottom-0 mb-6 text-[#fafafc] border-[#0071e3] hover:bg-[#0077ED] bg-[#0071e3] border pr-[16px] pl-[16px] pt-[3px] pb-[3px] h-9 rounded-[980px]">
+                    Learn more
+                  </button>
+
+                  <button className="text-[17px] text-[#0071e3] border border-[#0071e3] hover:bg-[#0071e3] hover:text-[#fafafc] pr-[16px] pl-[16px] pt-[3px] pb-[3px] h-9 rounded-[980px]">
+                    Apply now
+                  </button>
+                </div>
+              </div>
               <img
                 className="object-cover"
                 src="images\home_images\tile__apple_card_large.jpg"
@@ -289,13 +378,35 @@ const Home = () => {
         ) : (
           <div className="grid grid-cols-2 grid-rows-3 gap-3 m-3">
             <div className="relative flex justify-center h-[580px]">
-              <p className="absolute z-10 text-white text-center bottom-0 pb-[76px]">
-                Apple Worldwide Developers Conference. <br /> Join us online
-                June 10–14.
-              </p>
-              <button className="z-10 absolute text-[17px] bottom-0 mb-6 text-[#fafafc] border-[#0071e3] hover:bg-[#0077ED] bg-[#0071e3] border pr-[16px] pl-[16px] pt-[3px] pb-[3px] h-9 rounded-[980px]">
-                Learn more
-              </button>
+              <div className="absolute z-10  flex flex-col items-center pt-10">
+                <div className="flex items-center text-[44px] h-12 font-medium">
+                  <svg
+                    fill="#ffffff"
+                    height="88"
+                    viewBox="0 0 14 44"
+                    width="28"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path>
+                  </svg>
+                  <h3 className="pb-1 text-white">Watch</h3>
+                </div>
+                <p className="text-[#FF0000] text-[15px] tracking-widest font-semibold">
+                  SERIES 9
+                </p>
+                <p className="text-center text-[21px] leading-6 text-white">
+                  Smarter. Brighter. Mightier.
+                </p>
+                <div className="pt-[18px] flex gap-3">
+                  <button className="text-[17px] bottom-0 mb-6 text-[#fafafc] border-[#0071e3] hover:bg-[#0077ED] bg-[#0071e3] border pr-[16px] pl-[16px] pt-[3px] pb-[3px] h-9 rounded-[980px]">
+                    Learn more
+                  </button>
+
+                  <button className="text-[17px] text-[#0071e3] border border-[#0071e3] hover:bg-[#0071e3] hover:text-[#fafafc] pr-[16px] pl-[16px] pt-[3px] pb-[3px] h-9 rounded-[980px]">
+                    Buy
+                  </button>
+                </div>
+              </div>
               <img
                 className="z-0 object-cover"
                 src="images\home_images\promo_apple_watch_series_9_order__b3u85rm9zf6u_large.jpg"
@@ -319,7 +430,7 @@ const Home = () => {
               />
             </div>
             <div className="relative flex justify-center">
-              <h3 className="absolute z-10 flex items-center text-center bottom-0 pb-[90px] text-[32px] font-semibold ">
+              <h3 className="absolute z-10 flex items-center text-center bottom-0 pb-[90px] text-[40px] font-semibold ">
                 <svg
                   fill="#000000"
                   height="88"
@@ -331,7 +442,7 @@ const Home = () => {
                 </svg>
                 Vision Pro
               </h3>
-              <p className="absolute z-10 text-[18px] text-semibold text-center bottom-0 pb-[76px]">
+              <p className="absolute z-10 text-[21px]  text-center bottom-0 pb-[76px]">
                 The era of spatial computing is here.
               </p>
               <button className="z-10 absolute text-[17px] bottom-0 mb-6 text-[#fafafc] border-[#0071e3] hover:bg-[#0077ED] bg-[#0071e3] border pr-[16px] pl-[16px] pt-[3px] pb-[3px] h-9 rounded-[980px]">
@@ -345,7 +456,7 @@ const Home = () => {
             </div>
             <div className="relative flex justify-center">
               <div className="absolute z-10  flex flex-col items-center pt-10">
-                <div className="flex items-center text-[40px] h-12 font-medium">
+                <div className="flex items-center text-[40px] h-12 font-semibold">
                   <svg
                     fill="#000000"
                     height="88"
@@ -355,9 +466,9 @@ const Home = () => {
                   >
                     <path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path>
                   </svg>
-                  <h3 className="pb-1 ">Trade In</h3>
+                  <h3 className=" ">Trade In</h3>
                 </div>
-                <p className="text-center text-[18px] leading-6">
+                <p className="text-center text-[21px] leading-6">
                   Get $170-$630 in credit when you <br /> trade in iPhone 11 or
                   higher.
                 </p>
@@ -374,15 +485,31 @@ const Home = () => {
               />
             </div>
             <div className="relative flex justify-center">
+              <div className="absolute z-10  flex flex-col items-center pt-10">
+                <h3 className="pb-1 text-[40px] font-semibold">MacBook Air</h3>
+
+                <p className="text-center text-[21px] leading-6">
+                  Lean. Mean. M3 machine.
+                </p>
+                <div className="pt-[18px] flex gap-3">
+                  <button className="text-[17px] bottom-0 mb-6 text-[#fafafc] border-[#0071e3] hover:bg-[#0077ED] bg-[#0071e3] border pr-[16px] pl-[16px] pt-[3px] pb-[3px] h-9 rounded-[980px]">
+                    Learn more
+                  </button>
+
+                  <button className="text-[17px] text-[#0071e3] border border-[#0071e3] hover:bg-[#0071e3] hover:text-[#fafafc] pr-[16px] pl-[16px] pt-[3px] pb-[3px] h-9 rounded-[980px]">
+                    Buy
+                  </button>
+                </div>
+              </div>
               <img
                 className="object-cover "
-                src="images\home_images\promo_wwdc24.jpg"
+                src="images\home_images\promo_macbook_air_m3_small.jpg"
                 alt=""
               />
             </div>
             <div className="relative flex justify-center">
               <div className="absolute z-10  flex flex-col items-center pt-10">
-                <div className="flex items-center text-[44px] h-12 font-medium">
+                <div className="flex items-center text-[40px] h-12 font-semibold">
                   <svg
                     fill="#000000"
                     height="88"
@@ -392,9 +519,9 @@ const Home = () => {
                   >
                     <path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path>
                   </svg>
-                  <h3 className="pb-1 ">Card</h3>
+                  <h3>Card</h3>
                 </div>
-                <p className="text-center text-[18px] leading-6">
+                <p className="text-center text-[21px] leading-6">
                   Get up to 3% Daily Cash back <br /> with every purchase.
                 </p>
                 <div className="pt-[18px] flex gap-3">

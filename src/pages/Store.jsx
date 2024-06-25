@@ -89,7 +89,8 @@ const Store = () => {
                     <b className="text-[#1d1d1f]">Store.</b>
                     <b className="text-[#6e6e73]">
                       {" "}
-                      The best way to buy the <br /> products you love.
+                      The best way to buy <br />
+                      the products you love.
                     </b>
                   </p>
                 </div>
