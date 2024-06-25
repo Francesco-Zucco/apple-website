@@ -38,7 +38,7 @@ const routes = createBrowserRouter(
       <Route path="/tv-home" element={<Tvhome />} />
       <Route path="/watches" element={<Watch />} />
       <Route path="/ipads" element={<Ipad />} />
-      <Route path="/accesories" element={<Accesories />} />
+      <Route path="/accessories" element={<Accesories />} />
       <Route path="/support" element={<Support />} />
       <Route path="/store" element={<Store />} />
       <Route path="/mac" element={<Mac />} />

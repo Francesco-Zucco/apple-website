@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 // import { useFetchProducts } from "./useFetchProducts";
 // import CartItem from "./CartItem";
-import { clearCart, removeItem, add, subtract } from "../store/cart";
+import { removeItem, add, subtract } from "../store/cart";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -39,9 +39,9 @@ const Cart = () => {
     // console.log(item);
   };
 
-  const clearCartItems = () => {
-    dispatch(clearCart());
-  };
+  // const clearCartItems = () => {
+  //   dispatch(clearCart());
+  // };
 
   const incrementQuantity = (prod) => {
     dispatch(
@@ -104,10 +104,10 @@ const Cart = () => {
               <div className="w-[1024px]">
                 <div className="flex flex-col w-full h-auto  ">
                   <div className="border-b-[1px] pt-3 pb-5 pl-5 flex items-center justify-between border-gray-300 w-full pl- pr-5">
-                    <div className="flex w-auto h-auto">
-                      <Link to={"/store/" + item.prod.param}>
+                    <div className="flex w-auto h-auto select-none">
+                      <Link to={"/*/" + item.prod.param}>
                         <img
-                          className="h-auto w-[200px] object-cover"
+                          className="h-auto w-[180px] object-cover"
                           src={item.prod.productImage}
                           alt=""
                         />
@@ -115,30 +115,27 @@ const Cart = () => {
                     </div>
                     <div className="flex justify-between w-full pl-2 pb-[45px]">
                       <div>
-                        <h2 className=" lg:text-[24px] md:text-[21px] sm:text-[19px] ">
+                        <h2 className=" lg:text-[24px] md:text-[21px] sm:text-[19px]  select-none">
                           <b>{item.prod.productName}</b>
-                          <p className="">
-                            Quantity: <b>{item.quantity}</b>
-                          </p>
-                          {/* <p>${item.prod.description}</p> */}
-                          <button
-                            // clear cart button
-                            onClick={() => clearCartItems()}
-                          >
-                            O
-                          </button>
-
-                          <div>
-                            <button
-                              onClick={() => incrementQuantity(item.prod)}
-                            >
-                              +
-                            </button>
-                            <span>{item.quantity}</span>
+                          <div className="flex items-center">
+                            {/* <p className=" lg:text-[24px] md:text-[21px] sm:text-[19px]">
+                              Quantity:
+                            </p> */}
                             <button
                               onClick={() => decrementQuantity(item.prod)}
+                              className="rounded-[900px] h-[19px] w-[19px] border-[2px] active:bg-[#8e8e8e] bg-[#b3b2b2] border-[#737374] flex justify-center items-center text-[#59595a]"
                             >
-                              -
+                              <p className="pb-[2px]">-</p>
+                            </button>
+                            <p>
+                              {" "}
+                              <b className="px-[3px]">{item.quantity}</b>
+                            </p>
+                            <button
+                              onClick={() => incrementQuantity(item.prod)}
+                              className="rounded-[900px] h-[19px] w-[19px] border-[2px] active:bg-[#8e8e8e] bg-[#b3b2b2] border-[#737374] flex justify-center items-center text-[#59595a]"
+                            >
+                              <p className="pt-[1px] text-[15px]">+</p>
                             </button>
                           </div>
                         </h2>
@@ -148,7 +145,7 @@ const Cart = () => {
                           <b>${item.quantity * item.prod.price}.00</b>
                         </p>
                         <button
-                          className="lg:text-[19px] md:text-[18px] sm:text-[17px] text-[#0066cc] text-end"
+                          className="lg:text-[19px] md:text-[18px] sm:text-[17px] active:text-[#1d76cf]  text-[#0066cc] text-end"
                           onClick={() => deleteFromCart(item)}
                         >
                           Remove
@@ -190,7 +187,7 @@ const Cart = () => {
                     Get 3% Daily Cash with Apple Card
                   </p>
                 </div>
-                <button className="text-[17px] text-[#fafafc] border-[#0071e3] hover:bg-[#0077ED] flex justify-center items-center bg-[#0071e3] border w-[280px] h-[56px] mt-6 rounded-[13px]">
+                <button className="text-[17px] select-none text-[#fafafc] border-[#0071e3] hover:bg-[#0077ED] flex justify-center items-center bg-[#0071e3] border w-[280px] h-[56px] mt-6 rounded-[13px]">
                   Check Out
                 </button>
               </div>

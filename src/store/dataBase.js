@@ -85,7 +85,7 @@ const initialState = [
     macbooks: [
       {
         id: 10,
-        productName: "MacBook Air M3",
+        productName: "MacBook Air",
         description: "From $999 or $83.25/mo. for 12 mo.*",
         price: 999.0,
         param: "macbook-air-m3",

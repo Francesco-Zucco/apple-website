@@ -25,7 +25,7 @@ const Store = () => {
             <div className="w-[1024px] ml-5">
               <div className="flex flex-col gap-2 justify-between mt-[60px] pb-4    ">
                 <div className="flex flex-col gap-2 mr-[20px]">
-                  <p className="text-[32px] text-nowrap leading-10">
+                  <p className="text-[28px] text-nowrap leading-9">
                     <b className="text-[#1d1d1f]">Store.</b>
                     <b className="text-[#6e6e73]">
                       {" "}
@@ -85,7 +85,7 @@ const Store = () => {
             <div className="w-[1490px] ml-10">
               <div className="flex justify-between mt-[60px] pb-4 ">
                 <div className="flex flex-col gap-2 mr-[20px]">
-                  <p className="text-[45px] text-nowrap">
+                  <p className="text-[45px] leading-[60px] text-nowrap">
                     <b className="text-[#1d1d1f]">Store.</b>
                     <b className="text-[#6e6e73]">
                       {" "}
@@ -216,7 +216,7 @@ const Store = () => {
                   max: 400,
                   min: 0,
                 },
-                items: 2,
+                items: 2.4,
                 partialVisibilityGutter: 30,
               },
             }}
@@ -297,7 +297,7 @@ const Store = () => {
             <div className="w-[1490px] ml-5">
               <div className="flex justify-between mt-[60px] pb-4    ">
                 <div className="flex flex-col gap-2 mr-[20px]">
-                  <p className="text-[27px] ">
+                  <p className="text-[27px] leading-9">
                     <b className="text-[#1d1d1f]">The latest.</b>
                     <b className="text-[#6e6e73]">
                       {" "}

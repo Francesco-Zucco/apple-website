@@ -4,8 +4,8 @@ const Footer = () => {
   const dataBase = useSelector((store) => store.dataBase);
 
   return (
-    <footer className="py-5 sm:px-10 px-5 bg-[#f5f5f7]">
-      <div className="screen-max-width">
+    <footer className="py-9 sm:px-10 px-5 bg-[#f5f5f7]">
+      <div>
         <div>
           <p className="font-semibold  text-xs">
             More ways to shop:{" "}
@@ -15,18 +15,18 @@ const Footer = () => {
             or <span className="underline text-[#0066cc]">other retailer</span>{" "}
             near you.
           </p>
-          <p className="font-semibold  text-xs">Or call 000800-040-1966</p>
+          <p className="font-semibold  text-xs">Or call 000000-000-0000</p>
         </div>
 
         <div className="bg-neutral-700 my-5 h-[1px] w-full" />
 
         <div className="flex md:flex-row flex-col md:items-center justify-between">
-          <p className="font-semibold  text-xs">
+          <p className="font-semibold  text-[11px]">
             Copright @ 2024 Apple Inc. All rights reserved.
           </p>
           <div className="flex">
             {dataBase[5].footerLinks.map((link, i) => (
-              <p key={link} className="font-semibold  text-xs">
+              <p key={link} className="font-semibold  text-[11px]">
                 {link}
                 {i !== dataBase[5].footerLinks.length - 1 && (
                   <span className="mx-[2px]"> | </span>
