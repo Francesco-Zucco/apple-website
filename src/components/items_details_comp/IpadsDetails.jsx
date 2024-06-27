@@ -44,7 +44,7 @@ const IpadsDetail = () => {
       <div className="w-[1024px]  flex flex-col justify-center bg-white rounded-[20px] shadow-lg">
         <div className="w-full px-7 py-7 grid grid-cols-2 gap-[30px]">
           <div>
-            <div className="w-full">
+            <div className="w-full pb-4">
               <button
                 onClick={() => navigate(-1)}
                 className="bg-[#e8e8ed] active:bg-[#dedede] rounded-full	 h-[40px] w-[40px] flex justify-center items-center"
@@ -275,7 +275,7 @@ const IpadsDetail = () => {
               </svg>
             </button>
           </div>
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center pb-6">
             <h2 className="text-[28px]">
               <b>{result.productName}</b>
             </h2>
