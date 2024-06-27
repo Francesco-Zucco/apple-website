@@ -38,7 +38,7 @@ const Home = () => {
             <div className="absolute top-0 w-full  flex justify-center">
               <div className="z-10 flex flex-col items-center pt-10">
                 <h2 className="text-white text-[36px] font-medium tracking-[.0002em] ">
-                  iPhone 15 Pro
+                  iPhone
                 </h2>
 
                 <p className="text-white  text-nowrap text-[19px] tracking-[.012em] text-center font-extralight mb-7">
@@ -455,7 +455,7 @@ const Home = () => {
               />
             </div>
             <div className="relative flex justify-center">
-              <div className="absolute z-10  flex flex-col items-center pt-10">
+              <div className="absolute z-10  flex flex-col gap-1 items-center pt-10">
                 <div className="flex items-center text-[40px] h-12 font-semibold">
                   <svg
                     fill="#000000"
@@ -508,7 +508,7 @@ const Home = () => {
               />
             </div>
             <div className="relative flex justify-center">
-              <div className="absolute z-10  flex flex-col items-center pt-10">
+              <div className="absolute z-10  flex flex-col gap-1 items-center pt-10">
                 <div className="flex items-center text-[40px] h-12 font-semibold">
                   <svg
                     fill="#000000"

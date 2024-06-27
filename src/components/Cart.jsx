@@ -137,6 +137,9 @@ const Cart = () => {
                             >
                               <p className="pt-[1px] text-[15px]">+</p>
                             </button>
+                            {/* <button onClick={() => clearCartItems()}>
+                              DELETE CART
+                            </button> */}
                           </div>
                         </h2>
                       </div>

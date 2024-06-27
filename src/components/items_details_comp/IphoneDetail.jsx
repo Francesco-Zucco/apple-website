@@ -9,10 +9,14 @@ const IphoneDetail = () => {
     // console.log("A");
     const result = dataBase[0].iphones.find((p) => p.param === param);
     return (
-      <div className="w-full grid">
-        <h2>{result.productName}</h2>
-        <p>{result.description}</p>
-        <p>{result.price}</p>
+      <div className="w-full grid grid-cols-2">
+        <div>
+          <h2>{result.productName}</h2>
+        </div>
+        <div>
+          <p>{result.description}</p>
+          <p>{result.price}</p>
+        </div>
       </div>
     );
   };
