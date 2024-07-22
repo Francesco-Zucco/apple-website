@@ -15,7 +15,7 @@ const initialState = [
         productImage3: "/images/iphones/iphone15pro_detail_3.png",
         productImage4: "/images/iphones/iphone15pro_detail_4.png",
         text1:
-          "6.1-inch Super Retina XDR display footnote ¹ featuring ProMotion, Always-On, and Dynamic Island",
+          "6.1-inch Super Retina XDR display featuring ProMotion, Always-On, and Dynamic Island",
         text2:
           "Strong and light titanium design with Action button — a fast track to your favorite feature",
         text3:
@@ -23,7 +23,8 @@ const initialState = [
         text4:
           "A17 Pro chip delivers a massive leap in graphics performance, transforming mobile gaming",
         text5:
-          "USB-C connector with USB 3 for up to 20x faster transfer speeds footnote ² and new pro workflows",
+          "USB-C connector with USB 3 for up to 20x faster transfer speeds and new pro workflows",
+        route: "/iphones/iphone-15-pro",
       },
 
       {
@@ -38,7 +39,7 @@ const initialState = [
         productImage3: "/images/iphones/iphone15_detail_3.png",
         productImage4: "/images/iphones/iphone15_detail_4.png",
         text1:
-          "6.1-inch durable color-infused glass and aluminum design footnote with Ceramic Shield front",
+          "6.1-inch durable color-infused glass and aluminum design with Ceramic Shield front",
         text2:
           "Dynamic Island bubbles up alerts and Live Activities — so you don’t miss them while you’re doing something else",
         text3:
@@ -46,6 +47,7 @@ const initialState = [
         text4:
           "A16 Bionic powers computational photography and smooth gaming performance with great efficiency for all-day battery life",
         text5: "Connect and charge with USB-C",
+        route: "/iphones/iphone-15",
       },
       {
         id: 3,
@@ -59,13 +61,14 @@ const initialState = [
         productImage3: "/images/iphones/iphone14_detail_3.png",
         productImage4: "/images/iphones/iphone14_detail_4.png",
         text1:
-          "6.1-inch durable design footnote 1 with Ceramic Shield and water and dust resistance",
+          "6.1-inch durable design with Ceramic Shield and water and dust resistance",
         text2: "All-day battery life with up to 20 hours of video playback",
         text3:
-          "Vital safety features like Roadside Assistance via satellite, footnote 3 Emergency SOS via satellite, footnote 3 and Crash Detection footnote ",
+          "Vital safety features like Roadside Assistance via satellite, Emergency SOS via satellite, and Crash Detection",
         text4:
           "A Pro-level Main camera and advanced image processing for sensational shots in all kinds of light",
         text5: "A15 Bionic, the same superspeedy chip that’s in iPhone 13 Pro",
+        route: "/iphones/iphone-14",
       },
       {
         id: 4,
@@ -78,11 +81,12 @@ const initialState = [
         productImage2: "/images/iphones/iphone13_detail_2.png",
         productImage3: "/images/iphones/iphone13_detail_3.png",
         productImage4: "/images/iphones/iphone13_detail_4.png",
-        text1: "6.1-inch Super Retina XDR display footnote ",
+        text1: "6.1-inch Super Retina XDR display",
         text2: "Dual-camera system for incredible low-light photos and videos",
         text3: "A15 Bionic with 4-core GPU for lightning-fast performance",
         text4: "Ceramic Shield, and water and dust resistance",
         text5: "5G for superfast downloads and high-quality streaming",
+        route: "/iphones/iphone-13",
       },
       {
         id: 5,
@@ -95,14 +99,14 @@ const initialState = [
         productImage2: "/images/iphones/iphonese_detail_2.png",
         productImage3: "/images/iphones/iphonese_detail_3.png",
         productImage4: "/images/iphones/iphonese_detail_4.png",
-        text1:
-          "4.7-inch Retina HD display footnote ¹ that’s bright, colorful, and sharp",
+        text1: "4.7-inch Retina HD display that’s bright, colorful, and sharp",
         text2: "A15 Bionic, the same superpowerful chip that’s in iPhone 13",
-        text3: "5G for fast downloads and high-quality streaming footnote",
+        text3: "5G for fast downloads and high-quality streaming",
         text4:
           "Smarter camera makes automatic adjustments so faces, places, everything looks fabulous",
         text5:
           "Home button with Touch ID — securely unlock, sign in to apps, and use Apple Pay",
+        route: "/iphones/iphone-se",
       },
     ],
   },
@@ -129,6 +133,7 @@ const initialState = [
           "Stay connected with Wi-Fi 6E and 5G for superfast downloads and high-quality streaming",
         text5:
           "Compatible with Apple Pencil Pro, Apple Pencil (USB-C), Magic Keyboard, and Smart Folio",
+        route: "/ipads/ipad-pro",
       },
       {
         id: 7,
@@ -151,6 +156,7 @@ const initialState = [
           "Stay connected with Wi-Fi 6E and 5G for superfast downloads and high-quality streaming",
         text5:
           "Compatible with Apple Pencil Pro, Apple Pencil (USB-C), Magic Keyboard, and Smart Folio",
+        route: "/ipads/ipad-air",
       },
       {
         id: 8,
@@ -172,6 +178,7 @@ const initialState = [
         text4: "Stay connected with fast Wi‑Fi 6 and 5G wireless",
         text5:
           "Compatible with Apple Pencil (USB‑C), Apple Pencil (1st generation),³ Magic Keyboard Folio, and Smart Folio",
+        route: "/ipads/ipad",
       },
       {
         id: 9,
@@ -193,6 +200,7 @@ const initialState = [
         text4: "Stay connected with fast Wi‑Fi 6 and 5G wireless",
         text5:
           "Compatible with Apple Pencil (2nd generation), Apple Pencil (USB-C), and Smart Folio",
+        route: "/ipads/ipad-mini",
       },
     ],
   },
@@ -219,6 +227,7 @@ const initialState = [
           "A brilliant display — The 13.6-inch Liquid Retina display supports 1 billion colors. ",
         text5:
           "Look sharp, sound great — Everything looks and sounds amazing with a 1080p FaceTime HD camera, three mics, and four speakers with Spatial Audio.",
+        route: "/mac/macbook-air-m3",
       },
       {
         id: 11,
@@ -240,6 +249,7 @@ const initialState = [
           "Look sharp and sound clear — anywhere — with the 1080p FaceTime HD camera, three studio-quality mics, and six speakers with Spatial Audio",
         text5:
           "Connect everything you need with up to three Thunderbolt 4 ports, an SDXC card slot, an HDMI port, a MagSafe 3 port, and a headphone jack",
+        route: "/mac/macbook-pro",
       },
       {
         id: 12,
@@ -259,6 +269,7 @@ const initialState = [
         text4:
           "Look sharp and sound great with the 1080p FaceTime HD camera, three-mic array, and six-speaker sound system with Spatial Audio",
         text5: "Color-matched Magic Mouse and Magic Keyboard included",
+        route: "/mac/imac",
       },
       {
         id: 13,
@@ -279,6 +290,7 @@ const initialState = [
         text4: "Pairs perfectly with Studio Display — or up to eight displays",
         text5:
           "Get more done faster — The powerful 8-core CPU and up to 10-core GPU of the Apple M2 chip keep things running smoothly.",
+        route: "/mac/mac-studio",
       },
       {
         id: 14,
@@ -300,6 +312,7 @@ const initialState = [
         text4: "Complete your system with Studio Display and Magic accessories",
         text5:
           "Get more done faster — The powerful 8-core CPU and up to 10-core GPU of the Apple M2 chip keep things running smoothly.",
+        route: "/mac/mac-mini",
       },
       {
         id: 15,
@@ -320,6 +333,7 @@ const initialState = [
         text4: "Runs cool and quiet, even under intensive workloads",
         text5:
           "Comes with Magic accessories. Complete your setup with Pro Display XDR.",
+        route: "/mac/mac-pro",
       },
       {
         id: 16,
@@ -341,7 +355,9 @@ const initialState = [
         text4: "1,000,000:1 contrast ratio and stunningly real XDR imagery",
         text5:
           "P3 wide color gamut and 10-bit color depth for the highest-quality color possible",
+        route: "/mac/pro-display-xdr",
       },
+
       {
         id: 17,
         productName: "Studio Display",
@@ -363,6 +379,7 @@ const initialState = [
           "With ports for connectivity and charging and three stand options, it fits any setup",
         text5:
           "Pairs perfectly with any Mac, including the all-new Mac Studio. Add new matching Magic accessories to complete your studio.",
+        route: "/mac/studio-display",
       },
     ],
   },
@@ -388,6 +405,7 @@ const initialState = [
           "The all-new S9 SiP powers a magical new way to use your watch without touching the screen",
         text5:
           "Innovative safety features including Emergency SOS, Fall Detection, and Crash Detection",
+        route: "/watches/apple-watch-series-9",
       },
       {
         id: 19,
@@ -410,6 +428,7 @@ const initialState = [
           "Up to 36 hours of battery life, up to 72 hours on low power settings, and up to 17 hours of workout use in Low Power Mode",
         text5:
           "Pair with three band styles specialized for outdoor adventure, water sports, and all workout types",
+        route: "/watches/apple-watch-ultra-2",
       },
       {
         id: 20,
@@ -431,13 +450,14 @@ const initialState = [
           "Innovative safety features including Emergency SOS, Fall Detection, and Crash Detection",
         text5:
           "Family Setup lets you pair watches for family members without an iPhone",
+        route: "/watches/apple-watch-se",
       },
       {
         id: 21,
         productName: "Apple Watch Hermès",
         description: "From $1249 or $3104.08/mo. for 12 mo.*",
         price: 1249.0,
-        param: "apple-watch-series-9",
+        param: "apple-watch-hermes",
         productImage: "/images/watches/watch4.png",
         productImage1: "/images/watches/watch_hermes_detail_1.png",
         productImage2: "/images/watches/watch_hermes_detail_2.png",
@@ -452,6 +472,7 @@ const initialState = [
           "The all-new S9 SiP powers a magical new way to use your watch without touching the screen",
         text5:
           "Innovative safety features including Emergency SOS, Fall Detection, and Crash Detection",
+        route: "/watches/apple-watch-hermes",
       },
     ],
   },
@@ -473,6 +494,7 @@ const initialState = [
         text3: "",
         text4: "",
         text5: "",
+        route: "/airpods/air-pods-pro-2nd-gen",
       },
       {
         id: 23,
@@ -490,6 +512,7 @@ const initialState = [
         text3: "",
         text4: "",
         text5: "",
+        route: "/airpods/air-max",
       },
       {
         id: 25,
@@ -507,6 +530,7 @@ const initialState = [
         text3: "",
         text4: "",
         text5: "",
+        route: "/airpods/airpods-3nd-gen",
       },
       {
         id: 24,
@@ -524,6 +548,7 @@ const initialState = [
         text3: "",
         text4: "",
         text5: "",
+        route: "/airpods/airpods-2nd-gen",
       },
     ],
   },

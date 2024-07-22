@@ -1,5 +1,5 @@
 const Entertainment = () => {
-  return <div>Entertainment</div>;
+  return <div className="bg-white">Entertainment</div>;
 };
 
 export default Entertainment;

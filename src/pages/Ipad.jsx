@@ -234,7 +234,7 @@ const Ipad = () => {
                     max: 1024,
                     min: 890,
                   },
-                  items: 2.6,
+                  items: 2.1,
                   partialVisibilityGutter: 30,
                 },
                 tablet: {

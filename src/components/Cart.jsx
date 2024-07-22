@@ -105,7 +105,7 @@ const Cart = () => {
                 <div className="flex flex-col w-full h-auto  ">
                   <div className="border-b-[1px] pt-3 pb-5 pl-5 flex items-center justify-between border-gray-300 w-full pl- pr-5">
                     <div className="flex w-auto h-auto select-none">
-                      <Link to={"/*/" + item.prod.param}>
+                      <Link to={item.prod.route}>
                         <img
                           className="h-auto w-[180px] object-cover"
                           src={item.prod.productImage}
@@ -115,15 +115,19 @@ const Cart = () => {
                     </div>
                     <div className="flex justify-between w-full pl-2 pb-[45px]">
                       <div>
-                        <h2 className=" lg:text-[24px] md:text-[21px] sm:text-[19px]  select-none">
-                          <b>{item.prod.productName}</b>
+                        <h2 className=" lg:text-[24px] md:text-[21px]  sm:text-[19px]  select-none">
+                          <Link to={item.prod.route}>
+                            <b className="hover:text-[#1d76cf]">
+                              {item.prod.productName}
+                            </b>
+                          </Link>
                           <div className="flex items-center">
                             {/* <p className=" lg:text-[24px] md:text-[21px] sm:text-[19px]">
                               Quantity:
                             </p> */}
                             <button
                               onClick={() => decrementQuantity(item.prod)}
-                              className="rounded-[900px] h-[19px] w-[19px] border-[2px] active:bg-[#b3b2b2] bg-[#e8e8e8] border-[#737374] flex justify-center items-center text-[#59595a]"
+                              className="rounded-[900px] h-[19px] w-[19px] border-[2px] active:bg-[#cacaca] bg-[#e8e8e8] border-[#a5a5a7] flex justify-center items-center text-[#59595a]"
                             >
                               <p className="pb-[2px]">-</p>
                             </button>
@@ -133,7 +137,7 @@ const Cart = () => {
                             </p>
                             <button
                               onClick={() => incrementQuantity(item.prod)}
-                              className="rounded-[900px] h-[19px] w-[19px] border-[2px] active:bg-[#b3b2b2] bg-[#e8e8e8] border-[#737374] flex justify-center items-center text-[#59595a]"
+                              className="rounded-[900px] h-[19px] w-[19px] border-[2px] active:bg-[#cacaca] bg-[#e8e8e8] border-[#a5a5a7] flex justify-center items-center text-[#59595a]"
                             >
                               <p className="pt-[1px] text-[15px]">+</p>
                             </button>

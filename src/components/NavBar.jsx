@@ -61,7 +61,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-[#161617cc] flex justify-center sticky top-0 z-[8999] backdrop-blur-[20px] w-full saturate-[180%]">
+    <nav className="bg-[#161617cc] flex justify-center sticky top-0 z-[8999] backdrop-blur-[20px] w-full saturate-[180%] select-none">
       {/* Navbar when on DESKTOP  */}
       {collapse ? (
         ""
@@ -134,7 +134,7 @@ const NavBar = () => {
             Entertainment
           </Link>
           <Link
-            to={"/accesories"}
+            to={"/accessories"}
             className="text-[#cecece] hover:text-[#F9F9F9] focus:text-[#F9F9F9] flex items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] "
           >
             Accesories
@@ -456,7 +456,7 @@ const NavBar = () => {
                     navBarButtonAnimation();
                   }}
                   className="text-[#E8E8ED] block mb-1 text-[28px]"
-                  to="/accesories"
+                  to="/accessories"
                 >
                   Accesories
                 </Link>

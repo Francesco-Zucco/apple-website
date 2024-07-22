@@ -1,5 +1,5 @@
 const Vision = () => {
-  return <div>Vision</div>;
+  return <div className="bg-white">Vision</div>;
 };
 
 export default Vision;

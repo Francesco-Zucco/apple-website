@@ -157,7 +157,7 @@ const WatchesDetails = () => {
                 Buy
               </button>
             </div>
-            <div className="flex flex-col gap-3 pt-[30px]">
+            <div className="flex flex-col gap-3 pt-[30px] pb-8">
               <div className="border-b border-[#d2d2d7]">
                 <p className="font-semibold pt-2 pb-2">{result.text1}</p>
               </div>
