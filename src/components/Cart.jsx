@@ -64,7 +64,7 @@ const Cart = () => {
       {totalPrice ? (
         <div className="w-">
           <div className="flex flex-col w-full justify-center gap-5 h-[200px] items-center ">
-            <h1 className="text-[40px] text-center leading-[30px] ">
+            <h1 className="lg:text-[35px] md:text-[32px] sm:text-[30px] text-[30px] text-center leading-[30px] ">
               <b>Review your bag.</b>
             </h1>
             <h1 className="text-[17px] ">Free delivery and free returns.</h1>
@@ -72,11 +72,11 @@ const Cart = () => {
         </div>
       ) : (
         <div className="flex flex-col w-full justify-center gap-5 h-[300px] items-center border-b-[1px] border-b-[#d2d2d7]">
-          <div className="text-[35px] w-auto leading-[40px] text-center flex flex-col items-center">
+          <div className="text-[30px] lg:text-[35px] md:text-[32px] sm:text-[30px] w-auto leading-[40px] text-center flex flex-col items-center">
             <h1>
               <b>Your bag is empty.</b>
             </h1>
-            <h1 className="text-[17px] ">
+            <h1 className="text-[17px] text-[#666]">
               You can continue shopping by pressing the button bellow.
             </h1>
             <div className="flex gap-3">
@@ -194,9 +194,11 @@ const Cart = () => {
                     Get 3% Daily Cash with Apple Card
                   </p>
                 </div>
-                <button className="text-[17px] select-none text-[#fafafc] border-[#0071e3] hover:bg-[#0077ED] flex justify-center items-center bg-[#0071e3] border w-[280px] h-[56px] mt-6 rounded-[13px]">
-                  Check Out
-                </button>
+                <Link to={"/cart/checkout"}>
+                  <button className="text-[17px] select-none text-[#fafafc] border-[#0071e3] hover:bg-[#0077ED] flex justify-center items-center bg-[#0071e3] border w-[280px] h-[56px] mt-6 rounded-[13px]">
+                    Check Out
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

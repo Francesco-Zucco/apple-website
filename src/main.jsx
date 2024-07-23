@@ -28,6 +28,8 @@ import IpadsDetail from "./components/items_details_comp/IpadsDetails.jsx";
 import WatchesDetails from "./components/items_details_comp/WatchesDetails.jsx";
 import MacDetails from "./components/items_details_comp/MacDetails.jsx";
 import AirPodsDetails from "./components/items_details_comp/AirPodsDetails.jsx";
+import Checkout from "./components/Checkout.jsx";
+import ThanksForOrder from "./components/ThanksForOrder.jsx";
 
 const routes = createBrowserRouter(
   createRoutesFromElements(
@@ -51,6 +53,11 @@ const routes = createBrowserRouter(
       <Route path="/iphones/:param" element={<IphoneDetail />} />
       <Route path="/mac/:param" element={<MacDetails />} />
       <Route path="/airpods/:param" element={<AirPodsDetails />} />
+      <Route path="/cart/checkout" element={<Checkout />} />
+      <Route
+        path="/cart/checkout/order-successful"
+        element={<ThanksForOrder />}
+      />
     </Route>
   )
 );

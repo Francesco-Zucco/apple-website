@@ -60,13 +60,23 @@ const NavBar = () => {
     }
   };
 
+  const styles = {
+    container: {
+      fontFamily:
+        '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    },
+  };
+
   return (
-    <nav className="bg-[#161617cc] flex justify-center sticky top-0 z-[8999] backdrop-blur-[20px] w-full saturate-[180%] select-none">
+    <nav
+      style={styles.container}
+      className="bg-[#161617cc] flex justify-center sticky top-0 z-[8999] backdrop-blur-[20px] w-full saturate-[180%] select-none"
+    >
       {/* Navbar when on DESKTOP  */}
       {collapse ? (
         ""
       ) : (
-        <div className="flex justify-between h-[44px] w-full max-w-[1024px]  font-sf-pro-regular ml-[-8px] mr-[-8px] pl-[8px] pr-[8px]">
+        <div className="flex justify-between h-[44px] w-full max-w-[1024px]   ml-[-8px] mr-[-8px] pl-[8px] pr-[8px]">
           <Link to={"/"} className="flex items-center ps-[8px] pe-[8px]">
             <svg
               fill="#cecece"
@@ -81,67 +91,67 @@ const NavBar = () => {
           </Link>
           <Link
             to={"/store"}
-            className=" text-[#cecece]  hover:text-[#F9F9F9] focus:text-[#F9F9F9] flex items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] "
+            className=" text-[#cecece]  hover:text-[#F9F9F9] focus:text-[#F9F9F9] flex font-normal items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] "
           >
             Store
           </Link>
           <Link
             to={"/mac"}
-            className="text-[#cecece] hover:text-[#F9F9F9] focus:text-[#F9F9F9] flex items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] "
+            className="text-[#cecece] hover:text-[#F9F9F9] focus:text-[#F9F9F9] flex font-normal items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] "
           >
             Mac
           </Link>
           <Link
             to={"/ipads"}
-            className="text-[#cecece] hover:text-[#F9F9F9] focus:text-[#F9F9F9] flex items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] "
+            className="text-[#cecece] hover:text-[#F9F9F9] focus:text-[#F9F9F9] flex font-normal items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] "
           >
             iPad
           </Link>
           <Link
             to={"/iphones"}
-            className="text-[#cecece] hover:text-[#F9F9F9] focus:text-[#F9F9F9] flex items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] "
+            className="text-[#cecece] hover:text-[#F9F9F9] focus:text-[#F9F9F9] flex font-normal items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] "
           >
             iPhone
           </Link>
           <Link
             to={"/watches"}
-            className="text-[#cecece] hover:text-[#F9F9F9] focus:text-[#F9F9F9] flex items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] "
+            className="text-[#cecece] hover:text-[#F9F9F9] focus:text-[#F9F9F9] flex font-normal items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] "
           >
             Watch
           </Link>
           <Link
             to={"/vision"}
-            className="text-[#cecece] hover:text-[#F9F9F9] focus:text-[#F9F9F9] flex items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] "
+            className="text-[#cecece] hover:text-[#F9F9F9] focus:text-[#F9F9F9] flex font-normal items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] "
           >
             Vision
           </Link>
           <Link
             to={"/airpods"}
-            className="text-[#cecece] hover:text-[#F9F9F9] focus:text-[#F9F9F9] flex items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] "
+            className="text-[#cecece] hover:text-[#F9F9F9] focus:text-[#F9F9F9] flex font-normal items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] "
           >
             AirPods
           </Link>
           <Link
             to={"/tv-home"}
-            className="text-[#cecece] w-[16,939px] hover:text-[#F9F9F9] focus:text-[#F9F9F9] flex items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] text-nowrap"
+            className="text-[#cecece] w-[16,939px] hover:text-[#F9F9F9] focus:text-[#F9F9F9] font-normal flex items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] text-nowrap"
           >
             TV & Home
           </Link>
           <Link
             to={"/entertainment"}
-            className="text-[#cecece] hover:text-[#F9F9F9] focus:text-[#F9F9F9] flex items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] "
+            className="text-[#cecece] hover:text-[#F9F9F9] focus:text-[#F9F9F9] flex font-normal items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] "
           >
             Entertainment
           </Link>
           <Link
             to={"/accessories"}
-            className="text-[#cecece] hover:text-[#F9F9F9] focus:text-[#F9F9F9] flex items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] "
+            className="text-[#cecece] hover:text-[#F9F9F9] focus:text-[#F9F9F9] flex font-normal items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] "
           >
             Accesories
           </Link>
           <Link
             to={"/support"}
-            className="text-[#cecece] hover:text-[#F9F9F9] focus:text-[#F9F9F9] flex items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] "
+            className="text-[#cecece] hover:text-[#F9F9F9] focus:text-[#F9F9F9] flex font-normal items-center text-xs pl-[8px] pr-[8px] tracking-[-.01em] "
           >
             Support
           </Link>
@@ -198,7 +208,7 @@ const NavBar = () => {
       )}
       {/* Navbar when on mobile */}
       {collapse ? (
-        <div className="flex justify-between h-[48px] w-full max-w-[1024px]  font-sf-pro-regular ml-[-8px] mr-[-8px] pl-[8px] pr-[8px]">
+        <div className="flex justify-between h-[48px] w-full max-w-[1024px] ml-[-8px] mr-[-8px] pl-[8px] pr-[8px]">
           {/* SVG APPLE RESPONSIVE */}
           <Link to={"/"} className="flex items-center ps-[8px] pe-[8px]">
             <svg
