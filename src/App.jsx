@@ -8,16 +8,6 @@ function App() {
       fontFamily:
         '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     },
-    heading: {
-      fontSize: "2.5em",
-      fontWeight: "600",
-      marginBottom: "20px",
-    },
-    message: {
-      fontSize: "1.25em",
-      fontWeight: "400",
-      color: "#666",
-    },
   };
 
   return (

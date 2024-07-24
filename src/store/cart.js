@@ -16,14 +16,15 @@ const cartSlice = createSlice({
       localStorage.setItem("carts", JSON.stringify(state.items));
     },
     addToCart(state, action) {
-      const { productId, quantity, prod } = action.payload;
+      const { productId, quantity, prod } = action.payload; // Getting the details of the item is interacted with
       const indexProductId = state.items.findIndex(
+        // Finding the index of the object in the cart
         (item) => item.productId === productId
       );
       if (indexProductId >= 0) {
-        state.items[indexProductId].quantity += quantity;
+        state.items[indexProductId].quantity += quantity; // +1 quantity if item already in the cart
       } else {
-        state.items.push({ productId, quantity, prod });
+        state.items.push({ productId, quantity, prod }); // If not in cart here is added to the cart
       }
       localStorage.setItem("carts", JSON.stringify(state.items));
     },
@@ -45,6 +46,7 @@ const cartSlice = createSlice({
       localStorage.setItem("carts", JSON.stringify(state.items));
     },
     add(state, action) {
+      // +1 quantity button
       const { productId } = action.payload;
       const indexProductId = state.items.findIndex(
         (item) => item.productId === productId
@@ -53,6 +55,7 @@ const cartSlice = createSlice({
       localStorage.setItem("carts", JSON.stringify(state.items));
     },
     subtract(state, action) {
+      // -1 quantity button and remove if quantity is 0
       const { productId } = action.payload;
       const indexProductId = state.items.findIndex(
         (item) => item.productId === productId
@@ -67,6 +70,7 @@ const cartSlice = createSlice({
       localStorage.setItem("carts", JSON.stringify(state.items));
     },
     removeItem(state, action) {
+      // remove item function by creating a new array without the selected object
       const { productId } = action.payload;
       state.items = state.items.filter((item) => item.productId !== productId);
       console.log(state.items);

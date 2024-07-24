@@ -23,10 +23,12 @@ const ThanksForOrder = () => {
 
   return (
     <div
-      className="bg-white h-[500px] flex flex-col items-center"
+      className="bg-white h-[600px] flex flex-col items-center"
       style={styles.container}
     >
-      <h1 style={styles.heading}>Thank you for your order</h1>
+      <h1 className="pt-5" style={styles.heading}>
+        Thank you for your order
+      </h1>
       <p style={styles.message}>Your order is on the way.</p>
       <Link to={"/store"}>
         <button className="text-[17px] text-[#0071e3] hover:text-white bg-white border-[#0071e3] hover:bg-[#0071e3] flex justify-center items-center  border w-[260px] h-[56px] mt-6 rounded-[13px]">
